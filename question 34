@@ -3,15 +3,15 @@
 using namespace std;
 
 int main() {
-	int n,newno,fd,p,ld,d=0;
+	int n,newno,fd,p,ld,digit=0;
 	cout<<"Enter a number\n";
 	cin>>n;
 	int num=n;
 	while(n>0){
 	n=n/10;
-	d++;
+	digit++;
 	}
-	p=pow(10,(d-1));
+	p=pow(10,(digit-1));
 	fd=num/p;
 	ld=num%10;
 	num=num-(fd*p);
